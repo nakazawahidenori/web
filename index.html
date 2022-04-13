@@ -2,8 +2,22 @@
 <html lang="en">
   <head>
     <title>test</title>
-    <script type="text/javascript" src="https://demo-nakazawahidenori.smktg.jp/static/js/visitor_util.js"></script>
-<!-- SMP Tracking Tag Ver 3 -->
+    <script type="text/javascript" src="https://demo-nakazawahidenori.smktg.jp/static/upload/demo-nakazawahidenori.smktg.jp/seminar/166/shared/js/jquery.zip2addr.js"></script>
+<script type="text/javascript">
+(function($){
+$(function(){
+ /* 下記JSを使用する場合は行頭のコメント（//）を消す  */
+ /* 郵便番号から都道府県、住所を補完するJS（ここから）*/
+  $("[name='Public::Application::User_D__P__D_zip1']").zip2addr({
+    zip2:"[name='Public::Application::User_D__P__D_zip2']",
+    pref:"[name='Public::Application::User_D__P__D_prefecture_master_id']",
+    addr:"[name='Public::Application::User_D__P__D_address1']"
+  });
+ /* 郵便番号から都道府県、住所を補完するJS（ここまで）*/
+});
+})(jQuery);
+</script>
+    <!-- SMP Tracking Tag Ver 3 -->
 <script type="text/javascript">
 <!--
 if(typeof _cam !== 'function') {
@@ -31,5 +45,70 @@ _cam('send');
     cocallbackとしてGASに飛ばしてます。
     <a href='https://demo-nakazawahidenori.smktg.jp/public/authapi/login?callback_url=https%3A%2F%2Fscript.google.com%2Fa%2Fmacros%2Fshanon.co.jp%2Fs%2FAKfycbzOHcSPLbsNCGt-ngywoc1Bd5sg6sMoGU0nTxNjXNM7vuM5QRhlPN4atpBtfht6jruL%2Fexec&api_key=bec50d91ee80b564985e02fe78258a7b&api_sig=3665c7b4421bfa4c8e81fa3f093d931ca36e1a76'>https://demo-nakazawahidenori.smktg.jp/public/authapi/login?callback_url=https%3A%2F%2Fscript.google.com%2Fa%2Fmacros%2Fshanon.co.jp%2Fs%2FAKfycbzOHcSPLbsNCGt-ngywoc1Bd5sg6sMoGU0nTxNjXNM7vuM5QRhlPN4atpBtfht6jruL%2Fexec&api_key=bec50d91ee80b564985e02fe78258a7b&api_sig=3665c7b4421bfa4c8e81fa3f093d931ca36e1a76</a>
     </P>
+    
+  <table><tr>
+  <th>郵便番号</th>
+  <td><div class="ss_cell"><ul><div><li class="ss_input"><input type="text" name="Public::Application::User_D__P__D_zip1" value="986" size="3" maxlength="3" /></li></div><div><li class="ss_input"><span class="ss_leftComment">-</span><input type="text" name="Public::Application::User_D__P__D_zip2" value="0029" size="4" maxlength="4" /><span class="ss_rightComment">半角数字 （例　123-4567）</span></li></div></ul></div></td>
+</tr><tr>
+  <th>都道府県</th>
+  <td><div class="ss_cell"><ul><div><li class="ss_input"><select name="Public::Application::User_D__P__D_prefecture_master_id">
+<option value=""></option>
+<option value="1">北海道</option>
+<option value="2">青森県</option>
+<option value="3">岩手県</option>
+<option value="4">宮城県</option>
+<option value="5">秋田県</option>
+<option selected="selected" value="6">山形県</option>
+<option value="7">福島県</option>
+<option value="8">埼玉県</option>
+<option value="9">千葉県</option>
+<option value="10">東京都</option>
+<option value="11">神奈川県</option>
+<option value="12">茨城県</option>
+<option value="13">栃木県</option>
+<option value="14">群馬県</option>
+<option value="15">山梨県</option>
+<option value="16">長野県</option>
+<option value="17">新潟県</option>
+<option value="18">富山県</option>
+<option value="19">石川県</option>
+<option value="20">福井県</option>
+<option value="21">岐阜県</option>
+<option value="22">静岡県</option>
+<option value="23">愛知県</option>
+<option value="24">三重県</option>
+<option value="25">滋賀県</option>
+<option value="26">京都府</option>
+<option value="27">大阪府</option>
+<option value="28">兵庫県</option>
+<option value="29">奈良県</option>
+<option value="30">和歌山県</option>
+<option value="31">鳥取県</option>
+<option value="32">島根県</option>
+<option value="33">岡山県</option>
+<option value="34">広島県</option>
+<option value="35">山口県</option>
+<option value="36">徳島県</option>
+<option value="37">香川県</option>
+<option value="38">愛媛県</option>
+<option value="39">高知県</option>
+<option value="40">福岡県</option>
+<option value="41">佐賀県</option>
+<option value="42">長崎県</option>
+<option value="43">熊本県</option>
+<option value="44">大分県</option>
+<option value="45">宮崎県</option>
+<option value="46">鹿児島県</option>
+<option value="47">沖縄県</option>
+<option value="49">海外</option>
+</select></li></div></ul></div></td>
+</tr><tr>
+  <th>市区郡</th>
+  <td><div class="ss_cell"><ul><div><li class="ss_input"><input type="text" name="Public::Application::User_D__P__D_address1" value="鶴岡市北茅原町" size="40" maxlength="100" /><span class="ss_rightComment">（例　港区赤坂）</span></li></div></ul></div></td>
+</tr><tr>
+  <th>町村番地</th>
+  <td><div class="ss_cell"><ul><div><li class="ss_input"><input type="text" name="Public::Application::User_D__P__D_address2"  size="40" maxlength="100" /><span class="ss_rightComment">（例　1-2-3）</span></li></div></ul></div></td>
+</tr>
+</table>
   </body>
 </html>
